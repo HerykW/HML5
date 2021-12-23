@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte de imagem de fundo</title>
+
+    <style>
+
+div.quadrado{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.445);
+}
+
+div.circulo{
+display: inline-block;
+border-radius: 50%;
+margin-top: 30px;
+}
+div.circuloG{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+div#q1{
+    background-color: aqua;
+
+}
+div#q2{
+    background-image:linear-gradient(to bottom , orange , yellow)
+
+}
+
+
+div#q3{
+
+    background-image: url('Imagens/pattern001.png');
+
+}
+
+div#q4{
+    height: 300px;
+width: 300px;
+background-image: url("Imagens/pattern004.png");
+}
+
+div#q5{
+    height: 200px;
+width: 200px;
+background-image: url("Imagens/pattern002.png");
+}
+
+div#q6{
+    height: 100px;
+width: 100px;
+background-image: url("Imagens/pattern003.png");
+}
+
+div#q7{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-image: url("Imagens/pattern004.png");
+
+}
+div#q7:hover{
+    border-radius: 50%;
+    background-image: url("Imagens/pattern001.png");
+   transition-duration: 2s;
+}
+
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <br>
+    <div class="circulo" id="q4"></div>
+    <div class="circulo" id="q5"></div>
+    <div class="circulo" id="q6"></div>
+    <br>
+    <div class="circuloG" id="q7"></div>
+    
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
