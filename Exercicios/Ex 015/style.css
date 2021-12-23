@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+h1{
+    color: cornsilk;
+}
+
+h2{
+    color: rgb(151, 25, 51);
+
+}
+
+body{
+
+    background-color: rgb(179, 101, 182);
+    font-family:  sans-serif;
+    text-align: center;
+}
+
+
