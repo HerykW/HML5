@@ -1,15 +1,19 @@
 
 
-body{
-    position: relative;
-}
+
 
 
 .header {
     padding: 20px 40px;
     border-bottom: 1px solid #222f3e;
     margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
   }
+  article {
+    padding-top: 140px;
+}
   .header-logo {
     height: 50px;
   }
@@ -22,9 +26,9 @@ body{
     height: 200px;
     line-height: 200px;
     position: fixed;
-   top:45%;
-   right: 0px;
-   margin-right: 100px;
+   top:50%;
+   right: 5%;
+   transform: translateY(-50%);
    
 
 
