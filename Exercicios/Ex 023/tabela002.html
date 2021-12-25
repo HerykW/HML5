@@ -10,9 +10,8 @@
 table{
     width: 500px;
     border-collapse: collapse;
-    
-   
-    
+    margin: auto;
+    position: relative;
 }
 table td,th{
     border: 1px solid black;
@@ -24,7 +23,7 @@ th{
     font-weight: bolder;
 }
 tr{
-    background-color: rgba(209, 207, 207, 0.849);}
+    background-color: rgba(182, 171, 171, 0.616);}
 tfoot td{
     font-weight: bolder;
     background-color: rgba(34, 21, 21, 0.932);
@@ -34,6 +33,15 @@ caption{
         font-weight: bold;
         padding: 10px;
         background-color: rgb(139, 130, 130);
+    }
+    tbody tr:nth-child(2n){
+        background-color: rgba(128, 133, 133, 0.726);
+    }
+    thead >tr >th{
+
+        position: sticky;
+        top: 0;
+
     }
 </style>
 
@@ -55,7 +63,7 @@ caption{
             TFOOT
                 tr,td th           -->
 
-
+<div>
     <table>
         <caption>Lista da população Brasileira por estado</caption>
     
@@ -198,6 +206,7 @@ caption{
         
 
     </table>
+</div>
 </body>
 </html>
 
