@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+<style>
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #fff8f8;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #0e0e0e;
+      box-shadow: -80px 0 0 80px #ff0000;
+    }
+}
+form{
+    background-color: rgb(37, 37, 35);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 10px;
+  ;
+}
+input[type=submit]{
+
+    color: rgb(3, 3, 1);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466);
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.541) , gray);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+input[type=submit]:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.342);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.301);
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <!--O elemento HTML <form> representa uma seção de um documento que contém controles interativos que permitem ao usuário submeter informação a um determinado servidor web.-->
+
+    <h1>Formulários</h1>
+
+
+    <form method="post" id="fContato">
+
+    <fieldset id="usuario">
+
+        <legend>Identificação do usuário</legend>
+
+        <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" ></p>
+
+        <p><label for="passwd">Senha:</label> <input type="password" name="senha" id="passwd"></p>
+
+     <p><label for="mail">Email:</label> <input type="email" name="email" id="mail" placeholder="nome@email.com"></p>
+
+    <fieldset>
+
+        <legend>Sexo: </legend>
+            
+               <input type="radio" name="sexo" id="masc" checked > <label for="masc">Masculino </label>
+                <br>
+                <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino </label>
+
+            </fieldset>
+        <p><label for="data">Data de Nascimento: </label><input type="date"></p>
+    </fieldset>
+
+    <fieldset id="endereco">
+
+        <legend>Endereço do usuário</legend>
+
+        <p><label for="tRua">Logradouro: </label><input type="text" name="tRua" id="cRua"></p>
+        <p><label for="cNum">Número: </label><input type="number" name="cNum" min="0"></p>
+        
+        <p><label for="tEst">Estado:
+        <select name="tEst" id="cEst"> 
+            <option value="RO">Rôndonia</option>
+            <option value="SP">São paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+        </select></p>
+
+        <p><label for="">Cidade: </label><input type="text" name="tCid" id="cCid" list="cidades"></p>
+        <datalist id="cidades">
+            <option value="Ji-paraná"></option>
+            <option value="Jaru"></option>
+            <option value="cacoal"></option>
+            <option value="colorado do oeste"></option>
+            <option value="cujubim"></option>
+
+
+        </datalist>
+    </fieldset>
+
+
+<fieldset id="mensagem">
+    <legend>Mensagem do usuário</legend>
+    
+    <p><label for="Turg">Grau de urgência:  </label><input type="range" name="turg" id="cUrg" min="0" max="10" step="2" > Máx </p>
+    <p><label for="Tarea">Mensagem:  </label> <textarea name="Tarea" id="cArea" cols="30" rows="10"></textarea></p>
+</fieldset>
+<br>
+<input type="submit" value="Próximo" >
+
+</form>
+</body>
+</html>
