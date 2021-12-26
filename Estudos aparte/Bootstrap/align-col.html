@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de colunas</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+    <script type="text/javascript" src="Assets/js/bootstrap.js"></script>
+
+<style>
+
+*{
+    border: 1px solid rgba(255, 5, 5, 0.274);
+}
+
+
+</style>
+</head>
+<body>
+
+    <!-- é possivel alinhar os itens da Div.row usando a classe (align-items-posição) . 
+    Tambem é possivel alinhar cada item usando (align-self-posição)-->
+
+    <div class="container">
+
+        <div class="row" >
+
+            <div class="col-sm-3 align-self-end"> A</div>
+            <div class="col-sm-4 align-self-start">B</div>
+            <div class="col-sm-5 align-self-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus deleniti nobis id numquam delectus nihil inventore pariatur hic harum amet accusamus debitis, quae corporis beatae, vitae doloremque commodi modi libero!</div>
+
+
+ <!--A tag (offset-sm-4) criou um espaço vazio entre as colunas 1 e 3-->
+            <div class="row">
+                <div class="col-sm-4 ">1</div>
+                <div class="col-sm-4 offset-sm-4">3</div>
+               
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
